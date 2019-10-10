@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+p {
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
 .clearfix{
   display: table;
   content: "";
@@ -26,6 +31,7 @@
 .navbar {
   width: 230px;
   background-color: black;
+  padding: 0px;
 }
 
 #logo .spotify-logo--text {
@@ -169,6 +175,7 @@
   background-image: linear-gradient(to right bottom, rgb(67, 66, 87), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
 }
 
+/* Start footer */
 footer {
   background-color: #282828;
   height: 90px;
@@ -177,3 +184,92 @@ footer {
   bottom: 0;
 }
 
+#footer-padd{
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+footer [class*="flex-footer"]{
+  display: flex;
+  align-items: center;
+}
+
+
+#img-music-foot{
+  background-image: url(../img/music-footer-img.jpg);
+  width: 56px;
+  height: 56px;
+  background-size: contain;
+  margin-right: 10px;
+  box-shadow:  1px  1px 2px grey,
+  -1px -1px 2px grey,
+   1px -1px 2px grey,
+  -1px  1px 2px grey;
+}
+
+.height{
+  height: 100%;;
+}
+
+.flex-footer1 p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#text-grey{
+  color: grey;
+}
+
+#text-grey:hover {
+  color:white;
+}
+
+.flex-footer1 a img{
+  height: 20px;
+  color: grey;
+  width: 16.22px;
+  margin-left: 20px;
+  filter:invert(1) opacity(0.6);
+}
+
+.flex-footer1 a img:hover {
+  filter:invert(1) opacity(1);
+}
+
+.flex-footer2{
+ flex-direction: column;
+}
+
+.bottom-flex,
+.top-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+}
+
+.top-flex{
+  max-width: 70%;
+  margin-top: 10px;;
+}
+
+.icon-width {
+  width: 16px;
+  height: 20px;
+}
+
+.top-flex > div {
+  filter:invert(1) opacity(0.6);
+  cursor: pointer;
+}
+
+.top-flex > div:hover {
+  filter:invert(1) opacity(1);
+}
+
+.play{
+  width:32px;
+  height: 32px;
+}
