@@ -22,11 +22,147 @@
   overflow-y: auto ;
 }
 
+/* Start navbar */
 .navbar {
   width: 230px;
   background-color: black;
 }
 
+#logo .spotify-logo--text {
+  width: 131px;
+  height: 40px;
+  margin: 24px 0px 18px 24px;
+}
+
+.list ul li {
+  list-style-type: none;
+  margin-bottom: 15px;
+  padding-left: 24px;
+}
+
+.list ul li:first-child {
+  padding-left: 20px;
+  border-left: 4px solid #1ed760;
+}
+
+.list ul li a {
+  text-decoration: none;
+  color: #b3b3b3;
+  display: flex;
+  align-items: center;
+}
+
+.list ul li a:hover {
+  color: white;
+}
+
+.list ul li:first-child a {
+  color: white;
+}
+
+.list ul li a p {
+  margin-left: 16px;
+  font-weight: bold;
+}
+
+.playlist {
+  margin-top: 24px;
+  margin-left: 24px;
+}
+
+.text-white {
+  color:white;
+}
+
+.playlist a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: gray;
+  padding-top: 18px;
+  padding-left: 3px;
+}
+
+.playlist a:hover{
+  color: white;
+}
+
+.playlist a:hover svg{
+  background-color: white;
+}
+
+.playlist a svg {
+  width: 32px;
+  padding:4px;
+  margin-right: 16px;
+  background-color: hsla(0,0%,100%,.3);
+}
+
+.playlist ul {
+  margin-top: 25px;
+}
+
+.playlist ul li {
+  list-style-type: none;
+  cursor: pointer;
+  color:grey;
+  padding-left:3px;
+  margin-top: 12px;
+}
+
+.playlist ul li:hover {
+  color:white;
+}
+
+.footer-navbar {
+  margin-left: 28px;
+  margin-right: 20px;
+}
+
+.installa-app {
+  display: flex;
+  align-items: center;
+  color: gray;
+  margin-top: 20px;
+  cursor: pointer;
+  padding-bottom: 5px;
+  border-bottom: 1px solid gray;
+}
+
+.installa-app:hover {
+  color:white
+}
+
+.installa-app svg {
+  width: 20px;
+}
+
+.installa-app p {
+  margin-left: 16px;
+}
+
+.user{
+  margin-top: 10px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+#img-user{
+  background-image: url(../img/user.jpg);
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  background-size: contain;
+}
+
+.user p {
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Start main */
 .main {
   right: 0;
   width: calc(100% - 230px);
