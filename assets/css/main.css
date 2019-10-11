@@ -180,8 +180,14 @@ p {
   background-image: linear-gradient(to right bottom, rgb(67, 66, 87), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
 }
 
+.main > .container-fluid {
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-bottom: 20px;
+}
+
 .first-text {
-  margin: 50px;
+  margin: 38px;
 }
 
 .first-text > div{
@@ -197,6 +203,10 @@ p {
   color: #b3b3b3;
   font-weight: bold;
   font-size: 13px;
+}
+
+.first-text > div:first-child a {
+  color:white;
 }
 
 .first-text > div > a:hover {
@@ -217,7 +227,7 @@ p {
 
 @media screen and (max-width:575px) {
   .first-text{
-   margin:30px 5px;
+   margin:30px;
  }
  .navbar{
    width: 175px;
@@ -232,7 +242,163 @@ p {
  .navbar.functions #logo1 {
    display: block;
  }
+ 
+ .title-section .col-xs-8{
+   width: 70%;
+ }
 
+ .title-section .col-xs-4{
+  width: 30%;
+ }
+
+ .title-section .col-xs-8 h1{
+  font-size: 1.5em;
+ }
+
+}
+
+
+.title-section .item-flex-h1 {
+ display: flex;
+ align-items: flex-start;
+}
+
+.item-flex-h1{
+  display: flex;
+  flex-direction: column;
+}
+
+.item-flex-h1 h1{
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.underline{
+  visibility: hidden;
+  margin-top: 5px;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.item-flex-h1 h1:hover .underline{
+  visibility: visible;
+}
+
+.item-flex{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.item-flex p {
+ color: #b3b3b3;
+ transition: all 1s ease;
+}
+
+.item-flex p:hover {
+  color: white;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.jump{
+  margin-top: 50px;
+}
+
+.album-container > div {
+  height: 150px;
+  padding-left: 8px;
+  padding-right: 8px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: bold;
+  transition-duration: .2s;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+
+.album-container > div > div{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  margin-bottom: 5px;
+}
+
+.album-container > div svg{
+  position: absolute;
+  width: 40%;
+  justify-items: center;
+  visibility: hidden;
+  top: 35px;
+  filter: opacity(0.6);
+  transition-duration: .2s;
+}
+
+.album-container > div svg:hover{
+  filter: opacity(1);
+  width: 45%;
+}
+
+.circle-box{
+  clip-path: circle(45% at 50% 50%);
+}
+
+.album-container > div:hover > div{
+  filter: brightness(.3);
+}
+
+.album-container > div:hover svg{
+  visibility: visible;
+}
+
+.deandre{
+  background-image: url(../img/deandre.jpg);
+}
+
+.coding{
+  background-image: url(../img/coding.jpg);
+}
+
+.pink-floyd{
+  background-image: url(../img/pink.jpg);
+}
+
+.mm4{
+  background-image: url(../img/mm4.jpg);
+}
+
+.fibra{
+  background-image: url(../img/fibra.jpg);
+}
+
+.capa {
+  background-image: url(../img/capa.jpg);
+}
+
+@media screen and (min-width:768px){
+  .album-container > div {
+    height: 210px;
+  }
+  .album-container > div svg {
+    top: 45px;
+  }
+}
+
+@media screen and (min-width:992px){
+  .album-container > div {
+    height: 150px;
+  }
+  .album-container > div svg {
+    top: 27px;
+  }
 }
 
 
