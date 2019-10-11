@@ -199,7 +199,7 @@ footer [class*="flex-footer"]{
   background-image: url(../img/music-footer-img.jpg);
   width: 56px;
   height: 56px;
-  background-size: contain;
+  background-size: cover;
   margin-right: 10px;
   box-shadow:  1px  1px 2px grey,
   -1px -1px 2px grey,
@@ -345,3 +345,38 @@ footer [class*="flex-footer"]{
   margin-left: 5px;
 }
 
+@media screen and (min-width: 420px) and (max-width:700px){
+
+  .row > .height{
+   max-width: 25%;
+   padding-left: 0px;
+   padding-right: 0px;
+ }
+
+ .row > .height:nth-of-type(2){
+   max-width: 50%;
+ }
+ 
+ .top-flex {
+   max-width: 85%;
+ }
+ 
+ #img-music-foot {
+   display: none;
+ }
+
+ .flex-footer1 a img {
+   margin-left:10px;
+ }
+ 
+ .flex-footer3 {
+  flex-direction: column;
+  justify-content: space-around;
+ }
+ 
+ .second-bar{
+   width: 40%;
+   margin-left: 15px;
+ }
+
+}
