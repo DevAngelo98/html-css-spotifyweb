@@ -34,9 +34,14 @@ p {
   padding: 0px;
 }
 
+#logo1 {
+ width: 40px;
+ margin: 24px 0px 18px 24px;
+ display: none;
+}
+
 #logo .spotify-logo--text {
   width: 131px;
-  height: 40px;
   margin: 24px 0px 18px 24px;
 }
 
@@ -174,6 +179,63 @@ p {
   width: calc(100% - 230px);
   background-image: linear-gradient(to right bottom, rgb(67, 66, 87), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
 }
+
+.first-text {
+  margin: 50px;
+}
+
+.first-text > div{
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 15px;
+}
+
+.first-text > div > a {
+  text-decoration: none;
+  color: #b3b3b3;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.first-text > div > a:hover {
+  color: white;
+}
+
+.first-text > div:first-child {
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar-text{
+  height: 2px;
+  width: 18%;
+  background-color: green;
+  border-radius: 5px;
+}
+
+@media screen and (max-width:575px) {
+  .first-text{
+   margin:30px 5px;
+ }
+ .navbar{
+   width: 175px;
+ }
+ .main{
+   width: calc(100% - 175px);
+ }
+ .navbar.functions #logo {
+   display: none;
+ }
+ 
+ .navbar.functions #logo1 {
+   display: block;
+ }
+
+}
+
+
 
 /* Start footer */
 footer {
