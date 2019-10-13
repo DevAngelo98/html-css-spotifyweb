@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Spotify – Home</title>
+</head>
+
+<body>
+  <!--ALL-->
+  <div class="all clearfix">
+
+    <!--Navbar-->
+    <div class="navbar functions">
+      <a href="#logo1" id="logo1">
+        <svg xmlns="http://www.w3.org/2000/svg" class="spotify-logo" viewBox="0 0 167.5 167.5">
+          <title>Spotify</title>
+          <path fill="white"
+            d="M 83.7 0 C 37.5 0 0 37.5 0 83.7 c 0 46.3 37.5 83.7 83.7 83.7 c 46.3 0 83.7 -37.5 83.7 -83.7 S 130 0 83.7 0 Z M 122 120.8 c -1.4 2.5 -4.6 3.2 -7 1.7 c -19.8 -12 -44.5 -14.7 -73.7 -8 c -2.8 0.5 -5.6 -1.2 -6.2 -4 c -0.2 -2.8 1.5 -5.6 4 -6.2 c 32 -7.3 59.6 -4.2 81.6 9.3 c 2.6 1.5 3.4 4.7 1.8 7.2 Z M 132.5 98 c -2 3 -6 4 -9 2.2 c -22.5 -14 -56.8 -18 -83.4 -9.8 c -3.2 1 -7 -1 -8 -4.3 s 1 -7 4.6 -8 c 30.4 -9 68.2 -4.5 94 11 c 3 2 4 6 2 9 Z m 1 -23.8 c -27 -16 -71.6 -17.5 -97.4 -9.7 c -4 1.3 -8.2 -1 -9.5 -5.2 c -1.3 -4 1 -8.5 5.2 -9.8 c 29.6 -9 78.8 -7.2 109.8 11.2 c 3.7 2.2 5 7 2.7 10.7 c -2 3.8 -7 5 -10.6 2.8 Z" />
+        </svg>
+      </a>
+      <a id="logo" href="#logo">
+        <svg viewBox="0 0 1134 340" class="spotify-logo--text">
+          <title>Spotify</title>
+          <path fill="white"
+            d="M8 171c0 92 76 168 168 168s168-76 168-168S268 4 176 4 8 79 8 171zm230 78c-39-24-89-30-147-17-14 2-16-18-4-20 64-15 118-8 162 19 11 7 0 24-11 18zm17-45c-45-28-114-36-167-20-17 5-23-21-7-25 61-18 136-9 188 23 14 9 0 31-14 22zM80 133c-17 6-28-23-9-30 59-18 159-15 221 22 17 9 1 37-17 27-54-32-144-35-195-19zm379 91c-17 0-33-6-47-20-1 0-1 1-1 1l-16 19c-1 1-1 2 0 3 18 16 40 24 64 24 34 0 55-19 55-47 0-24-15-37-50-46-29-7-34-12-34-22s10-16 23-16 25 5 39 15c0 0 1 1 2 1s1-1 1-1l14-20c1-1 1-1 0-2-16-13-35-20-56-20-31 0-53 19-53 46 0 29 20 38 52 46 28 6 32 12 32 22 0 11-10 17-25 17zm95-77v-13c0-1-1-2-2-2h-26c-1 0-2 1-2 2v147c0 1 1 2 2 2h26c1 0 2-1 2-2v-46c10 11 21 16 36 16 27 0 54-21 54-61s-27-60-54-60c-15 0-26 5-36 17zm30 78c-18 0-31-15-31-35s13-34 31-34 30 14 30 34-12 35-30 35zm68-34c0 34 27 60 62 60s62-27 62-61-26-60-61-60-63 27-63 61zm30-1c0-20 13-34 32-34s33 15 33 35-13 34-32 34-33-15-33-35zm140-58v-29c0-1 0-2-1-2h-26c-1 0-2 1-2 2v29h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v58c0 23 11 35 34 35 9 0 18-2 25-6 1 0 1-1 1-2v-21c0-1 0-2-1-2h-2c-5 3-11 4-16 4-8 0-12-4-12-12v-54h30c1 0 2-1 2-2v-22c0-1-1-2-2-2h-30zm129-3c0-11 4-15 13-15 5 0 10 0 15 2h1s1-1 1-2V93c0-1 0-2-1-2-5-2-12-3-22-3-24 0-36 14-36 39v5h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v89c0 1 1 2 2 2h26c1 0 1-1 1-2v-89h25l37 89c-4 9-8 11-14 11-5 0-10-1-15-4h-1l-1 1-9 19c0 1 0 3 1 3 9 5 17 7 27 7 19 0 30-9 39-33l45-116v-2c0-1-1-1-2-1h-27c-1 0-1 1-1 2l-28 78-30-78c0-1-1-2-2-2h-44v-3zm-83 3c-1 0-2 1-2 2v113c0 1 1 2 2 2h26c1 0 1-1 1-2V134c0-1 0-2-1-2h-26zm-6-33c0 10 9 19 19 19s18-9 18-19-8-18-18-18-19 8-19 18zm245 69c10 0 19-8 19-18s-9-18-19-18-18 8-18 18 8 18 18 18zm0-34c9 0 17 7 17 16s-8 16-17 16-16-7-16-16 7-16 16-16zm4 18c3-1 5-3 5-6 0-4-4-6-8-6h-8v19h4v-6h4l4 6h5zm-3-9c2 0 4 1 4 3s-2 3-4 3h-4v-6h4z">
+          </path>
+        </svg>
+      </a>
+      <div class="list">
+        <ul>
+          <li>
+            <a href="#home">
+              <div class="icon"><svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
+                    fill="currentColor"></path>
+                </svg></div>
+              <p>Home</p>
+            </a>
+          </li>
+          <li><a href="#cerca"><svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+                  fill="currentColor" fill-rule="evenodd"></path>
+              </svg>
+              <p>Cerca</p>
+            </a></li>
+          <li><a href="#libreria"><svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+                  fill="currentColor"></path>
+              </svg>
+              <p>La tua libreria</p>
+            </a></li>
+        </ul>
+      </div>
+
+      <div class="playlist">
+        <p class="text-white"><b>PLAYLIST</b></p>
+        <a href="creaplay"><svg class="CreatePlaylistButton__svg" shape-rendering="crispEdges" viewBox="0 0 36 36">
+            <path class="CreatePlaylistButton__svg-plus-path" d="m28 20h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"></path>
+          </svg>
+          <p>Crea playlist</p>
+        </a>
+        <ul>
+          <li>
+            <p>Coding</p>
+          </li>
+          <li>
+            <p>Rap</p>
+          </li>
+          <li>
+            <p>Studiare</p>
+          </li>
+          <li>
+            <p>Yoga & Meditation</p>
+          </li>
+          <li>
+            <p>Musica Classica</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-navbar">
+        <div class="installa-app">
+          <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Download icon</title>
+            <path
+              d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z"
+              fill="currentColor" fill-rule="evenodd"></path>
+          </svg>
+          <p>Installa app</p>
+        </div>
+        <div class="user">
+          <div id="img-user"></div>
+          <p>Angelo Inglima</p>
+        </div>
+      </div>
+
+    </div>
+    <!--Finish of navbar-->
+
+    <!--Container-->
+    <div class="main functions">
+      <div class="container-fluid">
+        <div class="row first-text">
+          <div class="col-lg-2 col-sm-6 col-md-4">
+            <a href="#1">IN EVIDENZA</a>
+            <div class="bar-text"></div>
+          </div>
+          <div class="col-lg-2 col-sm-6 col-md-4">
+            <a href="#1">PODCAST</a>
+          </div>
+          <div class="col-lg-2 col-sm-6 col-md-4">
+            <a href="#1">CLASSIFICHE</a>
+          </div>
+          <div class="col-lg-2 col-sm-6 col-md-4">
+            <a href="#1">GENERI E MOOD</a>
+          </div>
+          <div class="col-lg-2 col-sm-6 col-md-4">
+            <a href="#1">NUOVE USCITE</a>
+          </div>
+          <div class="col-lg-2 col-sm-6 col-md-4">
+            <a href="#1">SCOPRI</a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row title-section">
+          <div class="col-xs-8 col-sm-8 item-flex-h1">
+            <h1>Recently played <div class="underline"></div>
+            </h1>
+
+          </div>
+          <div class="col-xs-4 col-sm-4 item-flex ">
+            <p>SEE ALL</p>
+          </div>
+        </div>
+        <div class="row row-album">
+          <div class="col-xl-2 col-sm-6 col-md-4 album_col">
+            <div class="container-all">
+              <div class="cover-opacity">
+                <img src="assets/img/mm4.jpg" class="img-album" alt="mm4">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="far"
+                  data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img"
+                  viewBox="0 0 512 512">
+                  <path fill="white"
+                    d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z">
+                  </path>
+                </svg>
+              </div>
+              <p>MM4</p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-6 col-md-4 album_col">
+            <div class="container-all">
+              <div class="cover-opacity circle-img">
+                <img src="assets/img/deandre.jpg" class="img-album" alt="mm4">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="far"
+                  data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img"
+                  viewBox="0 0 512 512">
+                  <path fill="white"
+                    d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z">
+                  </path>
+                </svg>
+              </div>
+              <p>Fabrizio De André</p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-6 col-md-4 album_col">
+            <div class="container-all">
+              <div class="cover-opacity">
+                <img src="assets/img/capa.jpg" class="img-album" alt="mm4">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="far"
+                  data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img"
+                  viewBox="0 0 512 512">
+                  <path fill="white"
+                    d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z">
+                  </path>
+                </svg>
+              </div>
+              <p>Caparezza</p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-6 col-md-4 album_col">
+            <div class="container-all">
+              <div class="cover-opacity circle-img">
+                <img src="assets/img/fibra.jpg" class="img-album" alt="mm4">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="far"
+                  data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img"
+                  viewBox="0 0 512 512">
+                  <path fill="white"
+                    d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z">
+                  </path>
+                </svg>
+              </div>
+              <p>Fabri Fibra</p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-6 col-md-4 album_col">
+            <div class="container-all">
+              <div class="cover-opacity circle-img">
+                <img src="assets/img/nitro.jpg" class="img-album" alt="mm4">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="far"
+                  data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img"
+                  viewBox="0 0 512 512">
+                  <path fill="white"
+                    d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z">
+                  </path>
+                </svg>
+              </div>
+              <p>Nitro</p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-6 col-md-4 album_col">
+            <div class="container-all">
+              <div class="cover-opacity">
+                <img src="assets/img/salmo.jpg" class="img-album" alt="mm4">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="far"
+                  data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img"
+                  viewBox="0 0 512 512">
+                  <path fill="white"
+                    d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z">
+                  </path>
+                </svg>
+              </div>
+              <p>Salmo</p>
+            </div>
+          </div>
+        </div>
+        <div class="row title-section">
+          <div class="col-xs-8 col-sm-8 item-flex-h1">
+            <h1>La tua rotazione frequente <div class="underline"></div>
+            </h1>
+
+          </div>
+          <div class="col-xs-4 col-sm-4 item-flex ">
+            <p>SEE ALL</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-2 col-sm-6 col-md-4 album_col">
+            <div class="container-all">
+              <div class="cover-opacity">
+                <img src="https://thisis-images.scdn.co/37i9dQZF1DZ06evO1SDx1r-default.jpg" class="img-album" alt="mm4">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="far"
+                  data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img"
+                  viewBox="0 0 512 512">
+                  <path fill="white"
+                    d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z">
+                  </path>
+                </svg>
+              </div>
+              <p>This Is Ernia</p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-6 col-md-4 album_col">
+            <div class="container-all">
+              <div class="cover-opacity circle-img">
+                <img src="assets/img/pink.jpg" class="img-album" alt="mm4">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="far"
+                  data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img"
+                  viewBox="0 0 512 512">
+                  <path fill="white"
+                    d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z">
+                  </path>
+                </svg>
+              </div>
+              <p>Pink Floyd</p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-6 col-md-4 album_col">
+            <div class="container-all">
+              <div class="cover-opacity">
+                <img src="assets/img/scatolarot.jpg" class="img-album" alt="mm4">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="far"
+                  data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img"
+                  viewBox="0 0 512 512">
+                  <path fill="white"
+                    d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z">
+                  </path>
+                </svg>
+              </div>
+              <p>Scatola Nera</p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-6 col-md-4 album_col">
+            <div class="container-all">
+              <div class="cover-opacity circle-img">
+                <img src="assets/img/fibra.jpg" class="img-album" alt="mm4">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="far"
+                  data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img"
+                  viewBox="0 0 512 512">
+                  <path fill="white"
+                    d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z">
+                  </path>
+                </svg>
+              </div>
+              <p>Fabri Fibra</p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-6 col-md-4 album_col">
+            <div class="container-all">
+              <div class="cover-opacity circle-img">
+                <img src="assets/img/claverroot.jpg" class="img-album" alt="mm4">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="far"
+                  data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img"
+                  viewBox="0 0 512 512">
+                  <path fill="white"
+                    d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z">
+                  </path>
+                </svg>
+              </div>
+              <p>Claver Gold</p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-6 col-md-4 album_col">
+            <div class="container-all">
+              <div class="cover-opacity">
+                <img src="assets/img/raprot.jpg" class="img-album" alt="mm4">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="far"
+                  data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img"
+                  viewBox="0 0 512 512">
+                  <path fill="white"
+                    d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z">
+                  </path>
+                </svg>
+              </div>
+              <p>Rap</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Finish of Container-->
+
+    <footer>
+      <div class="container-fluid height" id="footer-padd">
+        <div class="row height">
+          <div class="col-sm-3 height">
+            <div class="flex-footer1 height text-white">
+              <div id="img-music-foot">
+              </div>
+              <p>Time <br>
+                <span id="text-grey">Pink Floyd</span>
+              </p>
+              <a title="Dave Gandy [Public domain], via Wikimedia Commons"
+                href="https://commons.wikimedia.org/wiki/File:Heart_empty_font_awesome.svg"><img width="16"
+                  alt="Heart empty font awesome"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Heart_empty_font_awesome.svg/512px-Heart_empty_font_awesome.svg.png"></a>
+            </div>
+          </div>
+          <div class="col-sm-6 height">
+            <div class="flex-footer2 height">
+              <div class="top-flex">
+                <div class="shuffle icon-width">
+                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas"
+                    data-icon="random" class="svg-inline--fa fa-random fa-w-16" role="img" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                      d="M504.971 359.029c9.373 9.373 9.373 24.569 0 33.941l-80 79.984c-15.01 15.01-40.971 4.49-40.971-16.971V416h-58.785a12.004 12.004 0 0 1-8.773-3.812l-70.556-75.596 53.333-57.143L352 336h32v-39.981c0-21.438 25.943-31.998 40.971-16.971l80 79.981zM12 176h84l52.781 56.551 53.333-57.143-70.556-75.596A11.999 11.999 0 0 0 122.785 96H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12zm372 0v39.984c0 21.46 25.961 31.98 40.971 16.971l80-79.984c9.373-9.373 9.373-24.569 0-33.941l-80-79.981C409.943 24.021 384 34.582 384 56.019V96h-58.785a12.004 12.004 0 0 0-8.773 3.812L96 336H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h110.785c3.326 0 6.503-1.381 8.773-3.812L352 176h32z" />
+                    </svg>
+                </div>
+                <div class="back icon-width">
+                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas"
+                    data-icon="step-backward" class="svg-inline--fa fa-step-backward fa-w-14" role="img"
+                    viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                      d="M64 468V44c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v176.4l195.5-181C352.1 22.3 384 36.6 384 64v384c0 27.4-31.9 41.7-52.5 24.6L136 292.7V468c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12z" />
+                    </svg>
+                </div>
+                <div class="play">
+                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="far"
+                    data-icon="play-circle" class="svg-inline--fa fa-play-circle fa-w-16" role="img"
+                    viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                      d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z" />
+                    </svg>
+                </div>
+                <div class="after icon-width">
+                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas"
+                    data-icon="step-forward" class="svg-inline--fa fa-step-forward fa-w-14" role="img"
+                    viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                      d="M384 44v424c0 6.6-5.4 12-12 12h-48c-6.6 0-12-5.4-12-12V291.6l-195.5 181C95.9 489.7 64 475.4 64 448V64c0-27.4 31.9-41.7 52.5-24.6L312 219.3V44c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12z" />
+                    </svg>
+                </div>
+                <div class="repeat icon-width">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="repeat" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                    class="svg-inline--fa fa-repeat fa-w-16 fa-3x">
+                    <path fill="currentColor"
+                      d="M512 256c0 88.224-71.775 160-160 160H170.067l34.512 32.419c9.875 9.276 10.119 24.883.539 34.464l-10.775 10.775c-9.373 9.372-24.568 9.372-33.941 0l-92.686-92.686c-9.373-9.373-9.373-24.568 0-33.941l92.686-92.686c9.373-9.373 24.568-9.373 33.941 0l10.775 10.775c9.581 9.581 9.337 25.187-.539 34.464L170.067 352H352c52.935 0 96-43.065 96-96 0-13.958-2.996-27.228-8.376-39.204-4.061-9.039-2.284-19.626 4.723-26.633l12.183-12.183c11.499-11.499 30.965-8.526 38.312 5.982C505.814 205.624 512 230.103 512 256zM72.376 295.204C66.996 283.228 64 269.958 64 256c0-52.935 43.065-96 96-96h181.933l-34.512 32.419c-9.875 9.276-10.119 24.883-.539 34.464l10.775 10.775c9.373 9.372 24.568 9.372 33.941 0l92.686-92.686c9.373-9.373 9.373-24.568 0-33.941l-92.686-92.686c-9.373-9.373-24.568-9.373-33.941 0L306.882 29.12c-9.581 9.581-9.337 25.187.539 34.464L341.933 96H160C71.775 96 0 167.776 0 256c0 25.897 6.186 50.376 17.157 72.039 7.347 14.508 26.813 17.481 38.312 5.982l12.183-12.183c7.008-7.008 8.786-17.595 4.724-26.634z"
+                      class=""></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="bottom-flex">
+                <p>2:00</p>
+                <div class="first-bar">
+                  <div class="progress-bar">
+                  </div>
+                  <div class="circle">
+                  </div>
+                </div>
+                <p>6:53</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 height">
+            <div class="flex-footer3 height">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas"
+                data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" viewBox="0 0 448 512">
+                <path fill="currentColor"
+                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+                </svg>
+              <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="computer-speaker" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
+                class="svg-inline--fa fa-computer-speaker fa-w-20 fa-3x">
+                <path fill="currentColor"
+                  d="M480 192a48 48 0 1 0-48-48 48 48 0 0 0 48 48zm0-64a16 16 0 1 1-16 16 16 16 0 0 1 16-16zm0 96a96 96 0 1 0 96 96 96.1 96.1 0 0 0-96-96zm0 160a64 64 0 1 1 64-64 64.08 64.08 0 0 1-64 64zm0-88a24 24 0 1 0 24 24 24 24 0 0 0-24-24zM592 32H368a48 48 0 0 0-48 48v352a48 48 0 0 0 48 48h224a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm16 400a16 16 0 0 1-16 16H368a16 16 0 0 1-16-16V80a16 16 0 0 1 16-16h224a16 16 0 0 1 16 16zm-504 16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8h200.41a79.15 79.15 0 0 1-14.79-32zM0 64v288a32 32 0 0 0 32 32h256v-32H32V64h257.62a79.15 79.15 0 0 1 14.79-32H32A32 32 0 0 0 0 64z"
+                  class=""></path>
+              </svg>
+              <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="volume" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512" class="svg-inline--fa fa-volume fa-w-15 fa-3x">
+                <path fill="currentColor"
+                  d="M342.91 193.57c-7.81-3.8-17.5-.48-21.34 7.5-3.81 7.97-.44 17.53 7.53 21.34C343.22 229.2 352 242.06 352 256c0 13.94-8.78 26.8-22.9 33.58-7.97 3.81-11.34 13.38-7.53 21.34 3.86 8.05 13.54 11.29 21.34 7.5C368.25 306.28 384 282.36 384 256s-15.75-50.29-41.09-62.43zM231.81 64c-5.91 0-11.92 2.18-16.78 7.05L126.06 160H24c-13.26 0-24 10.74-24 24v144c0 13.25 10.74 24 24 24h102.06l88.97 88.95c4.87 4.87 10.88 7.05 16.78 7.05 12.33 0 24.19-9.52 24.19-24.02V88.02C256 73.51 244.13 64 231.81 64zM224 404.67L139.31 320H32V192h107.31L224 107.33v297.34zm256-148.68c0-66.12-34.02-126.62-88.81-157.87-7.69-4.38-17.59-1.78-22.04 5.89-4.45 7.66-1.77 17.44 5.96 21.86 44.77 25.55 72.61 75.4 72.61 130.12s-27.84 104.58-72.61 130.12c-7.72 4.42-10.4 14.2-5.96 21.86 4.3 7.38 14.06 10.44 22.04 5.89C445.98 382.62 480 322.12 480 255.99z"
+                  class=""></path>
+              </svg>
+              <div class="first-bar second-bar">
+                <div class="progress-bar">
+                </div>
+                <div class="circle">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="container-fluid" id="prova1">
+      <div class="row prova2">
+        <div id="container-all-banner">
+          <div id="close-ban">
+            <a href="#close"><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="window-close"
+                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                class="svg-inline--fa fa-window-close fa-w-16 fa-3x">
+                <path fill="currentColor"
+                  d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm16 400c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V80c0-8.8 7.2-16 16-16h416c8.8 0 16 7.2 16 16v352zM348.6 188.3L280.9 256l67.7 67.7c4.6 4.6 4.6 12 0 16.6l-8.3 8.3c-4.6 4.6-12 4.6-16.6 0L256 280.9l-67.7 67.7c-4.6 4.6-12 4.6-16.6 0l-8.3-8.3c-4.6-4.6-4.6-12 0-16.6l67.7-67.7-67.7-67.7c-4.6-4.6-4.6-12 0-16.6l8.3-8.3c4.6-4.6 12-4.6 16.6 0l67.7 67.7 67.7-67.7c4.6-4.6 12-4.6 16.6 0l8.3 8.3c4.5 4.6 4.5 12 0 16.6z"
+                  class=""></path>
+              </svg>
+          </div>
+          </a>
+          <div class="text-container-ban">
+            <h1 class="report">
+              <span id="w" class="text-move">W</span><span id="e" class="text-move">e</span><span id="l"
+                class="text-move">l</span><span id="c" class="text-move">c</span><span id="o"
+                class="text-move">o</span><span id="m" class="text-move">m</span><span id="e2"
+                class="text-move">e</span>
+            </h1>
+          </div>
+          <div>
+           <p id="report-text"></p>
+          </div>
+          <ul id="list_social_banner">
+            <li><a href="https://github.com/DevAngelo98" target="_blank"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg-inline--fa fa-github fa-w-16 fa-3x"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" class=""></path></svg></a></li>
+            <li><a href="https://www.facebook.com/angelo.inglima.5" target="_blank"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-facebook-f fa-w-10 fa-3x"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" class=""></path></svg></a></li>
+            <li><a href="https://www.instagram.com/dev.angelo/" target="_blank"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-instagram fa-w-14 fa-3x"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" class=""></path></svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Finish-->
+  <script>
+    document.getElementById("close-ban").onclick = function () {
+      document.getElementById("prova1").style.display = "none";
+    }
+
+    function macchinaDaScrivere(id_campo, testo, velocita, posizione) {
+      var lunghezza = testo.length;
+      posizione = posizione || 0;
+      if (posizione < lunghezza) {
+        var carattere = testo.substring(posizione, posizione + 1);
+        document.getElementById(id_campo).innerHTML = document.getElementById(id_campo).innerHTML.substring(0, posizione) + carattere;
+        setTimeout('macchinaDaScrivere("' + id_campo + '","' + testo + '",' + velocita + ',' + (posizione + 1) + ');', velocita);
+      } else {
+        document.getElementById("id_campo").innerHTML = document.getElementById(id_campo).innerHTML.substring(0, lunghezza);
+      }
+    }
+   
+    macchinaDaScrivere('report-text', '© 2019, Angelo Inglima', 200);
+  
+    
+  </script>
+</body>
+
+</html>

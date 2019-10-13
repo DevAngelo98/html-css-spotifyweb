@@ -595,3 +595,105 @@ footer [class*="flex-footer"]{
  }
 
 }
+
+@font-face {
+ font-family: 'report';
+ src: url('../font/report.ttf') format("truetype"); 
+}
+
+#prova1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color:rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100vw;
+}
+
+.prova2 {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 50%;
+  height: 60%;
+  background-color: rgb(221, 172, 6);
+}
+
+#close-ban {
+  width: 40px;
+  position: absolute;
+  left: 102%;
+  top: -45px;
+}
+
+#close-ban a{
+  color: red;
+}
+
+#container-all-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.report{
+  font-size: 60px;
+  color: #1879AB;
+  font-family: 'report', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+.text-move{
+  position: relative;
+  top:0px;
+  transition: top 1s ease-out;
+}
+
+.report #w:hover,
+.report #e2:hover{
+  top:-10px;
+}
+
+.report #e:hover,
+.report #m:hover{
+  top:-20px;
+}
+
+.report #l:hover,
+.report #o:hover{
+  top:-30px;
+}
+
+.report #c:hover{
+  top:-40px;
+}
+
+#report-text{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: #563344 ;
+}
+
+#list_social_banner {
+  list-style-type: none;
+  display: flex;
+}
+
+#list_social_banner li{
+  height: 30px;
+  width: 30px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+#list_social_banner li svg{
+  max-height: 30px;
+  color:#0926DE;
+}
+
+#list_social_banner li svg:hover{
+  color:#332144;
+}
