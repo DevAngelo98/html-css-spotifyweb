@@ -443,9 +443,18 @@ footer [class*="flex-footer"]{
 }
 
 .play{
-  width: 30px;
   height: 30px;
+  width: 30px;
 }
+
+.play svg {
+  width: 30px;
+  transition: width .4s ease;
+}
+
+.play svg:hover {
+  width: 35px;
+} 
 
 .bottom-flex p{
   color: #b3b3b3;
